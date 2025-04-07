@@ -24,7 +24,7 @@ var dnctii = {
 var dohungx = {
   grace_period_expires_date: null,
   purchase_date: "2024-07-28T01:04:17Z",
-  product_identifier: "com.dnctii.premium.yearly",
+  product_identifier: "com.ohoang7.premium.yearly",
   expires_date: "2099-12-18T01:04:17Z"
 };
 
@@ -37,12 +37,12 @@ if (match) {
     dohungx.product_identifier = s;
     obj.subscriber.subscriptions[s] = dnctii;
   } else {
-    obj.subscriber.subscriptions["com.dnctii.premium.yearly"] = dnctii;
+    obj.subscriber.subscriptions["com.ohoang7.premium.yearly"] = dnctii;
   }
 
   obj.subscriber.entitlements[e] = dohungx;
 } else {
-  obj.subscriber.subscriptions["com.dnctii.premium.yearly"] = dnctii;
+  obj.subscriber.subscriptions["com.ohoang7.premium.yearly"] = dnctii;
   obj.subscriber.entitlements.pro = dohungx;
 }
 
